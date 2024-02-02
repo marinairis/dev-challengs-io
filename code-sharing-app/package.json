@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@codedread/bitjs": "^1.2.2",
+    "monaco-editor": "^0.45.0"
+  }
+}

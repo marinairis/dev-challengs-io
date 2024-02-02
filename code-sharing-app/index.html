@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compartilhar código (APP)</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <div class="div-container">
+        <img class="logo" src="assets/images/NoteCodeLogo.svg" alt="NetCode"/>
+        <h3>Crie & Compartilhe</h3>
+        <h2>Seu código facilmente.</h2>
+    </div>
+
+    <div id="editor-container">
+        <div id="editor" class="monaco-editor-container"></div>
+    </div>
+
+    <div>
+        <select id="theme-toggle" onchange="changeTheme()">
+            <option value="light">Claro</option>
+            <option value="dark">Escuro</option>
+        </select>
+
+        <select id="code-toggle" onchange="changeTheme()">
+            <option value="light">HTML</option>
+            <option value="dark">JavaScript</option>
+        </select>
+
+        <button id="share">
+            <img src="assets/images/Share.svg" />
+            Compartilhe
+        </button>
+    </div>
+
+        <script src="node_modules/monaco-editor/min/vs/loader.js"></script>
+        <script src="js/monacoSetup.js"></script>
+</body>
+</html>
